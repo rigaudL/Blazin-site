@@ -20,10 +20,10 @@
                 <a  href="/templates/Home.html"> <img src="/static/business_card.png" width=200px class="homelogo"> </img> </a>
                 <a style="color:#E0D6D0" href="/templates/Home.html">Home</a> 
                 <a style="color:#E0D6D0" href="/templates/Products.html" >Products</a>
-                <a style="color:#E0D6D0" href="/templates/Book.html" >Book</a>
+                <a style="color:#E0D6D0" href="/templates/Book.html" >Contact</a>
                 <a style="color:#E0D6D0" href="/templates/About.html">About</a>
                     <div id="Nav3">
-                        <a href="/templates/Book.html"> <img src="/icons/calendar-check-fill.svg" width=50px> </a>
+                        <a href="/templates/Book.html"> <img src="/icons/blackphone.svg" width=50px > </a>
                        <!--
                          <img src="/icons/search.svg"  width= 50px >
                         <img src="/icons/telephone-inbound-fill.svg" width=50px> -->
@@ -35,13 +35,18 @@
 
 <div id="bookingcontent">
     <div>
-        <h1 style="color:#E0D6D0">Welcome to Bookings page</h1>
-        <label style="color:#E0D6D0;margin-bottom: 20px;">Email:</label>
-        <input id="forjs" type="text" placeholder=" Please enter a email...." style="color:#E0D6D0;margin-bottom: 20px;"></input>
+        <h1 style="color:#E0D6D0; padding-left:125px; text-decoration: underline; ">Welcome To Contact Page</h1>
+            <div id="C" style="margin-bottom:10px">
+                <label style="color:#E0D6D0;margin-bottom: 20px;">Contact Us Via Email &rarr; <a style="color:yellow;" href="mailto:blazinamazintreatz@gmail.com?subject=Message%20From%20Customer&body=Body%20Text%20Here%20Goes%20Here">Send Email</a>
+            
+                        <label style="color:#E0D6D0;margin-left: 20px;">Contact Us Via SMS Click &rarr; <a style="color:yellow;" href="sms:772-480-1114?body=Message%20Here">Send Text Message</a>
+            </div>
     </div>
-        <label style="color:#E0D6D0">Type of event?</label>
-        <input type="text" placeholder=" Please enter a description of your event...." style= "width:500px;  margin-bottom: 20px; height:200px; " ></input>
-        <button style=" color:grey; width:500px; height:20px;" onclick="sendemail">-Send Booking-</button>
+    <div>
+        <img src="\static\menu.png" alt=" Young Child enjoying her day with our signature Italian ice" width = 300px style="padding-right:10px"> </img>
+    </div>
+
+
 </div>
         
         <footer id="realfooter">
@@ -53,6 +58,6 @@
             <p id="footer">Contact us at blazinamazintreatz@gmail.com</p>
         </footer>
     
-        <script src="" async defer></script>
+        <script src="/action.js" async defer></script>
     </body>
 </html>
