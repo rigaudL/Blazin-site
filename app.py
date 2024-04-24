@@ -1,9 +1,4 @@
 from flask import Flask, render_template
-import pandas as pd
-
-# df = pd.read_csv("Dataforwebsite.csv")
-# for index, row in df.iterrows():
-#     pass
 
 app = Flask(__name__)
 
