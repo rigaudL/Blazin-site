@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
 import sqlite3
 
+
+
 app = Flask(__name__)
+
+
 
 # Function to initialize the SQLite3 database
 def init_database():
@@ -18,26 +22,28 @@ def init_database():
 
 init_database()
 
-@app.route('/')
-def index():
-    return render_template('Home.html')
+
+@app.route("/")
+def Home():
+    return render_template("/Home.html")
+
 
 @app.route("/Products")
 def Products():
-    return render_template("Products.html")
-
+    return render_template("/Products.html")
 
 
 @app.route("/About")
 def About():
-    return render_template("About.html")
+    return render_template("/About.html")
 
 @app.route("/Book")
 def Book():
-    return render_template("Book.html")
+    return render_template("/Book.html")
 
 
 # An API to receive formData 
+
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
     # Access form data.
@@ -58,7 +64,6 @@ def submit_form():
     return "Form submitted successfully and data saved to database."
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
-
-# GET the data from the database and display it to the frontend in a table.
+    
