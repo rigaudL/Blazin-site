@@ -34,18 +34,15 @@
     
 
 
-<div id="bookingcontent">
-    <div>
-        <h1 style="color:#E0D6D0; padding-left:125px; text-decoration: underline; ">Welcome To Contact Page</h1>
-            <div id="C" style="margin-bottom:10px">
-                <label style="color:#E0D6D0;margin-bottom: 20px;">Contact Us Via Email &rarr; <a style="color:yellow;" href="mailto:blazinamazintreatz@gmail.com?subject=Message%20From%20Customer&body=Body%20Text%20Here%20Goes%20Here">Send Email</a>
-            
-                        <label style="color:#E0D6D0;margin-left: 20px;">Contact Us Via SMS Click &rarr; <a style="color:yellow;" href="sms:772-480-1114?body=Message%20Here">Send Text Message</a>
-            </div>
-    </div>
-    <div>
-        <img src="\static\menu.png" alt=" Young Child enjoying her day with our signature Italian ice" width = 300px style="padding-right:10px"> </img>
-    </div>
+        <div id="bookingcontent">
+            <div>
+                <h1 class="text-center mt-5" style="color:#E0D6D0; text-decoration: underline;" >Contact Page</h1>
+                <!-- <h1 style="color:#E0D6D0; padding-left:125px; text-decoration: underline; ">Welcome To Contact Page</h1> -->
+                
+                </div>
+                <div>
+                    <img src="\static\logo_copy.png" alt="Our Logo" width = 300px style="padding-right:10px"> </img>
+                </div>
 
 
 </div>
@@ -53,22 +50,21 @@
 
 
 
-<h1 class="text-center mt-5">Contact Page</h1>
 <div class="container">
     <form action="/submit-form" method="post" class="w-50 d-flex flex-column mx-auto">
         <div class="mb-3">
-            <label>Name</label>
+            <label style="color:#E0D6D0;" >Name</label>
             <input type="text" id="floatingName" class="form-control" name="name">
         </div>
         <div class="mb-3">
-            <label for="email">Email</label>
+            <label for="email" style="color:#E0D6D0;">Email</label>
             <input type="email" class="form-control" name="email">
         </div>
         <div class="mb-3">
-            <label for="message">Message</label>
+            <label for="message" style="color:#E0D6D0;">Message</label>
             <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
         </div>
-        <button class="btn btn-outline-dark w-50 mx-auto" type="submit">Submit</button>
+        <button class="btn btn-outline-dark w-50 mx-auto" type="submit" style="color:#E0D6D0;">Submit</button>
     </form>
 </div>
 
@@ -80,7 +76,12 @@
                 <a id="favi1" href="https://m.facebook.com/p/Blazin-Amazin-Treatz-100064961171239/" target="blank" ><img src="\static\icons\facebook.svg" width=50px> </a>
             </div>
             <p id="footer">&copy;Amazin Blazin treats. All rights reserved.</p>
-            <p id="footer">Contact us at blazinamazintreatz@gmail.com</p>
+            <div id="C" style="margin-bottom:10px">
+                <label style="color:#E0D6D0;margin-bottom: 20px;">Contact Us Via Email &rarr; <a style="color:yellow;" href="mailto:blazinamazintreatz@gmail.com?subject=Message%20From%20Customer&body=Body%20Text%20Here%20Goes%20Here">Send Email</a>
+                    
+                    <label style="color:#E0D6D0;margin-left: 20px;">Contact Us Via SMS Click &rarr; <a style="color:yellow;" href="sms:772-480-1114?body=Message%20Here">Send Text Message</a>
+                    </div>
+                </div>
         </footer>
     
         <script src="/action.js" async defer></script>

@@ -55,7 +55,13 @@ def submit_form():
     conn.commit()
     conn.close()
     
-    return "Form submitted successfully and data saved to database."
+    # return "Form submitted successfully and data saved to database."
+    return """
+    <script>
+        alert('Message Sent successfully!');
+        window.location.href = '/Book'; // Redirect to the home page after the alert
+    </script>
+    """
 
 
 if __name__ == '__main__':
