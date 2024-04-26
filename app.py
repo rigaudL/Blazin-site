@@ -36,6 +36,20 @@ def About():
 def Book():
     return render_template("Book.html")
 
+@app.route('/data')
+def display_queries():
+    conn = sqlite3.connect('database.db')
+    c = conn.cursor()
+    c.execute("SELECT * FROM users_enquiries")
+    data = c.fetchall()
+    conn.close()
+    return render_template('login.html', users=data)
+    # print(data)
+    # isUserAdmin = False
+    # if isUserAdmin:
+    #     return render_template('display_queries.html', users=data)
+    # else:
+
 
 # An API to receive formData 
 @app.route('/submit-form', methods=['POST'])
